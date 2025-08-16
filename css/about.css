@@ -2,7 +2,7 @@ main {
   display: flex;
   flex-direction: column;
 
-  gap: 70px;
+  gap: 100px;
 }
 
 .header {
@@ -51,6 +51,16 @@ main {
 }
 .navbar__options i {
   font-size: 20px;
+}
+
+button {
+  width: 120px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: #dcc38b;
+  color: white;
+  font-size: larger;
+  margin: 30px;
 }
 
 /* footer  */
@@ -196,3 +206,87 @@ main {
 }
 
 /* story */
+
+/* achievemnt */
+
+.achievement__wrapper {
+  display: flex;
+  flex-direction: row;
+}
+.achievement__left {
+  flex: 60%;
+  position: relative;
+}
+.achievement__min {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 150%;
+  background-color: #dcc38b;
+  right: 45%;
+  top: 10%;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+  font-weight: 800;
+}
+.achievement__left .achievement__img {
+  margin-left: 20px;
+}
+
+.achievement__right {
+  flex: 40%;
+}
+
+.achievement__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  text-align: right;
+}
+
+.achievement__right h3 {
+  font-weight: 600;
+  font-size: x-large;
+  margin-bottom: 30px;
+  text-transform: lowercase;
+}
+
+.achievement__right p {
+  font-size: large;
+  font-weight: 400;
+  color: rgb(55, 54, 54);
+  line-height: 30px;
+}
+
+/* achievemnt */
+
+/* store */
+
+.store {
+  margin-bottom: 100px;
+}
+
+.store__min {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background-color: #dcc38b;
+  border-radius: 150%;
+  top: 20%;
+  right: 85%;
+  outline: 8px solid white;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+  font-weight: 700;
+}
+
+/* store */
