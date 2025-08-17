@@ -1,3 +1,10 @@
+main {
+  display: flex;
+  flex-direction: column;
+
+  gap: 100px;
+}
+
 .header {
   width: 100%;
   position: fixed;
@@ -5,6 +12,7 @@
   background-color: white;
   border: 1px solid rgba(222, 221, 221, 0.989);
 }
+
 .navbar {
   height: 70px;
   display: flex;
@@ -45,6 +53,17 @@
   font-size: 20px;
 }
 
+button {
+  width: 120px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: #dcc38b;
+  color: white;
+  font-size: larger;
+  margin: 30px 0 30px;
+}
+
+/* footer  */
 .footer {
   width: 100%;
   height: 100%;
@@ -52,7 +71,6 @@
   display: flex;
   flex-direction: column;
 }
-/* footer  */
 
 .footer__wrapper {
   display: flex;
@@ -92,6 +110,7 @@
   padding: 20px;
   color: white;
 }
+
 /* footer  */
 
 /* hero */
@@ -102,7 +121,7 @@
 
 .hero img {
   width: 100%;
-  height: 450px;
+  height: 400px;
   object-fit: cover;
   filter: brightness(40%);
 }
@@ -116,104 +135,78 @@
 .hero h3 {
   position: absolute;
   top: 50%;
-  left: 43%;
+  left: 50%;
   font-weight: 500;
   font-size: xx-large;
   color: white;
   text-transform: uppercase;
 }
 
-/* category */
+/* hero */
 
-.category__wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 40px;
-}
+/* story */
 
-.category__head h3 {
-  font-weight: 600;
-  margin-top: 50px;
-  font-size: xx-large;
-}
-
-.btns {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 30px;
-}
-.btns button {
-  color: white;
-  font-size: small;
-  background-color: #bea087;
-  border-radius: 50px;
-  padding: 12px;
-  padding: 10px 32px;
-}
-
-/* category */
-
-/* delicious */
-
-.delicious {
-  height: 80px;
-  background-color: #bea087;
-  margin-top: 50px;
-  display: flex;
-
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.delicious__wrapper {
-  color: white;
-  display: flex;
-
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  font-size: x-large;
-}
-
-/* delicious */
-
-/* cakes */
-
-.cakes__delicious {
-  margin-top: 70px;
+.environment {
   margin-bottom: 100px;
 }
 
-.cakes__wrapper {
+.environment__wrapper {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-  margin-bottom: 50px;
-}
-.cakes__card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  margin-bottom: 30px;
+  justify-content: space-between;
+  gap: 250px;
 }
 
-.cakes__card img {
-  width: 220px;
-  height: 220px;
-  object-fit: cover;
+.environment__left {
+  flex: 50%;
+}
+.environment__right {
+  flex: 30%;
+  position: relative;
+}
+
+.environment__right .environment__img {
   border-radius: 150%;
 }
 
-hr {
-  background-color: #e5e5e5;
+.environment__right .environment__min {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background-color: #dcc38b;
+  border-radius: 150%;
+  top: 16%;
+  right: 85%;
+  outline: 8px solid white;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.environment__right .environment__min p {
+  font-size: xx-large;
+  font-weight: 600;
 }
 
-/* cakes */
+.environment__left,
+.environment__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.environment__left h3 {
+  font-weight: 500;
+  font-size: x-large;
+  margin-bottom: 30px;
+}
+
+.environment__left p {
+  font-size: large;
+  font-weight: 400;
+  color: rgb(55, 54, 54);
+  line-height: 30px;
+}
+
+/* story */
