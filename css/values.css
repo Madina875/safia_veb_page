@@ -144,11 +144,7 @@ button {
 
 /* hero */
 
-/* story */
-
-.environment {
-  margin-bottom: 100px;
-}
+/* environment */
 
 .environment__wrapper {
   display: flex;
@@ -209,4 +205,72 @@ button {
   line-height: 30px;
 }
 
-/* story */
+/* environment */
+
+/* family */
+
+.family__wrapper {
+  display: flex;
+  flex-direction: row;
+}
+.family__left {
+  flex: 60%;
+  position: relative;
+}
+.family__min {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border-radius: 150%;
+  background-color: #dcc38b;
+  right: 45%;
+  top: 12%;
+  outline: 10px solid white;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+  font-weight: 800;
+}
+.family__left .family__img {
+  width: 500px;
+  border-radius: 150%;
+}
+
+.family__right {
+  flex: 40%;
+}
+
+.family__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  text-align: right;
+}
+
+.family__right h3 {
+  font-weight: 600;
+  font-size: x-large;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.family__right p {
+  font-size: large;
+  font-weight: 400;
+  color: rgb(55, 54, 54);
+  line-height: 30px;
+}
+
+/* family */
+
+/* inclusion */
+
+.inclusion {
+  margin-bottom: 100px;
+}
+
+/* inclusion */
